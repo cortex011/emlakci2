@@ -1,0 +1,153 @@
+.header_box{
+    width: 100%;
+    background-color: rgb(149, 26, 26);
+}
+
+.header_top{
+    width: 1000px;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.head_logo{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.head_menu{
+    color: white;
+    font-size: 15px;
+    
+}
+.head_menu a{
+    padding: 15px 20px;
+    color: white;
+}
+.head_menu a:hover{
+    background-color: rgb(73, 32, 32);
+    color: rgb(149, 26, 26);
+}
+
+.ads_add{
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: green;
+    color: white;
+    
+}
+.ads_add span{
+    font-size: 20px;
+}
+
+.ads_add i{
+    font-size: 25px;
+}
+
+.ads_add:hover{
+    background-color: rgb(9, 98, 9);
+  
+    cursor: pointer;
+}
+
+
+
+.header_bottom{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.searching_box{
+    display: flex;
+}
+
+.searching form{
+    
+    
+    color: white;
+}
+
+.searching form > div {
+    display: flex;
+   
+
+}
+
+.searching form div > div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.price_home{
+    display: flex;
+    flex-direction: row !important;
+}
+.searching form select{
+    width: 150px;
+    height: 40px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px black solid;
+}
+
+.searching form label{
+    margin-bottom: 0px;
+}
+
+.searching form input[type="number"]{
+    width: 80px;
+    height: 40px;
+    outline: none;
+    padding: 5px;
+}
+
+.header_line{
+    padding: 0;
+ 
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.addit_btn{
+    display: flex;
+    align-items: center;
+}
+
+.addit_btn div{
+    padding: 4px 20px;
+    font-size: 20px;
+    margin-top: 23px;
+    height: 40px;
+    border: 1px rgb(56, 56, 56) solid;
+}
+
+.additonal_search{
+    background-color: white;
+    color: brown;
+    border: none;
+    cursor: pointer;
+}
+
+.additonal_search:hover{
+    opacity: 0.8;
+}
+
+.search_btn{
+    background-color: rgb(44, 44, 234);
+    color: white;
+    cursor: pointer;
+}
+
+.search_btn:hover{
+    background-color: rgb(25, 25, 238);
+}
