@@ -1,0 +1,17 @@
+.result_cont{
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.result_title{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 14px;
+    background-color: rgb(210, 216, 221);
+}
+
+.vip_text{
+    width: 400px;
+    display: inline-block;
+}

@@ -1,0 +1,70 @@
+section{
+    width: 1000px;
+    margin: auto;
+}
+
+.agents_title{
+    background-color: white;
+    font-size: 23px;
+    padding: 14px;
+    margin-top: 30px;
+    box-shadow: -1px 3px 179px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 3px 179px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 179px -5px rgba(0,0,0,0.75);
+}
+
+.agent_box{
+    display: flex;
+    margin-top: 10px;
+    height: 156px;
+    width: 475px;
+    border: 1px rgb(88, 88, 88) solid;
+}
+
+.agent_img{
+    width: 150px;
+    
+}
+
+.agent_detail{
+    width: 325px;
+    padding: 10px;
+}
+
+.agent_ttl{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.egent_elan_say{
+    font-size: 10px;
+    color: rgb(141, 141, 141);
+}
+
+.agent_contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.agent_detail span{
+    margin-left: 3px;
+}
+
+.agent_text{
+    font-size: 12px;
+}
+
+.agents_lists{
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.agent_box:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.agent_box:nth-child(even){
+    margin-left: 20px;
+}

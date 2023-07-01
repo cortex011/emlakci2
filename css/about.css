@@ -1,0 +1,49 @@
+.about_cont{
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+
+    padding: 15px;
+}
+
+.about_proj{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about_txt{
+    font-size: 18px;
+    font-style: italic;
+}
+
+.ads_contact input, .ads_contact textarea{
+    width: 300px;
+    
+    border: 2px solid black ;
+    outline: none;
+    margin-top: 5px;
+    padding-left: 4px;
+
+
+
+
+}
+
+input[type="submit"]{
+    background-color: blue;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    color: white;
+}
+
+
+.map_ads{
+    display: flex;
+    justify-content: space-between
+}
+.about_map{
+    width: 600px;
+    border: 1px solid black;
+    height: 400px;
+}

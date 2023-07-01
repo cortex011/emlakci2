@@ -69,45 +69,35 @@ a{
     display: flex;
 }
 
-.searching form{
-    
-    
-    color: white;
-}
 
-.searching form > div {
-    display: flex;
-   
-
-}
-
-.searching form div > div {
-    display: flex;
-    flex-direction: column;
-
+.price_box input{
+    width: 75px;
+    height: 40px;
 }
 
 .price_home{
     display: flex;
-    flex-direction: row !important;
-}
-.searching form select{
-    width: 150px;
-    height: 40px;
-    padding-left: 5px;
-    outline: none;
-    border: 1px black solid;
 }
 
-.searching form label{
-    margin-bottom: 0px;
+.visible_search, .unvisible_search{
+    display: flex;
 }
 
-.searching form input[type="number"]{
-    width: 80px;
-    height: 40px;
-    outline: none;
-    padding: 5px;
+
+.check_box{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.check_box input{
+    width: 20px;
+    height: 20px;
+}
+
+.visible_search > div, .unvisible_search > div{
+    display: flex;
+    flex-direction: column;
 }
 
 .header_line{
@@ -118,14 +108,25 @@ a{
     background-color: white;
 }
 
+.searching label{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.searching select{
+    height: 40px;
+    width: 150px;
+}
+
 .addit_btn{
     display: flex;
-    align-items: center;
+    margin-top: 2px;
 }
 
 .addit_btn div{
-    padding: 4px 20px;
-    font-size: 20px;
+    padding: 7px 20px;
+    font-size: 17px;
     margin-top: 23px;
     height: 40px;
     border: 1px rgb(56, 56, 56) solid;
@@ -151,3 +152,94 @@ a{
 .search_btn:hover{
     background-color: rgb(25, 25, 238);
 }
+
+.unvisible_search{
+    display: none !important;
+}
+
+.unvisible_search.active{
+    display: flex !important;
+    margin-top: 10px;
+}
+
+.head_logo i{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    .header_top{
+        width: 90%;
+    }
+    .header_bottom{
+        width: 100%;
+    }
+
+    .searching_box{
+        width: 100%;
+       
+    }
+
+    .unvisible_search{
+        display: flex !important;
+    }
+
+    .visible_search, .unvisible_search{
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .visible_search > div, .unvisible_search > div{
+        width: 100%;
+    }
+
+    .visible_search > div select, .unvisible_search > div select{
+        width: 100%;
+    }
+
+    .price_home input{
+        width: 50%;
+    }
+
+    .searching_box{
+        flex-direction: column;
+    }
+
+    .addit_btn{
+        display: block;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .additonal_search{
+        display: none;
+    }
+    .head_logo{
+        font-size: 80%;
+    }
+    .ads_add span, .ads_add i{
+        font-size: 12px;
+    }
+
+    .head_menu{
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 155px;
+        background-color: rgb(149, 26, 26);
+    }
+
+    .head_menu.active{
+        display: block;
+    }
+    .head_menu a{
+        display: block;
+    }
+
+    .head_logo i{
+        display: inline-block;
+    }
+}
+

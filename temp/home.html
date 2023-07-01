@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -16,24 +17,37 @@
   </head>
 
   <body>
+
+    <div class="reklam_top">
+      <div class="reklam_img">
+        <img src="../img/desctop.jpg" alt="" width="100%" height="100%">
+      </div>
+
+
+    </div>
+
+
     <header class="header">
       <div class="header_box">
         <div class="header_top">
           <div class="head_logo">
+            <i class="fa-solid fa-bars" id="ham_menu_btn"></i>
             <strong>Emlakci.az</strong>
           </div>
 
-          <div class="head_menu">
+          <div class="head_menu" id="head_menu">
             <a href="#">Əsas səhifə</a>
             <a href="">Kirayə evlər</a>
             <a href="">Agentliklər</a>
             <a href="">Haqqımızda</a>
           </div>
 
+          <a href="elanadd.html">
           <div class="ads_add">
             <i class="fa-solid fa-plus"></i>
             <span>Elan yerləşdir</span>
           </div>
+        </a>
         </div>
 
         <hr class="header_line" />
@@ -42,57 +56,62 @@
           <div class="searching_box">
             <div class="searching">
               <form action="">
-                  <div class="visible_search">
-                  <div class="saleorrent_box">
-                    <label for="saleorrent">Meqsed:</label>
-                    <select name="saleorrent" id="saleorrent">
-                      <option value="alqi">Alış</option>
-                      <option value="kiraye">Kirayə</option>
-                    </select>
-                  </div>
+                <div class="visible_search">
 
-                  <div class="type_box">
-                    <label for="type">Tikintinin novu:</label>
-                    <select name="type" id="type">
-                      <option value="menzil">Mənzil</option>
-                      <option value="kohne">Köhnə tikili</option>
-                      <option value="ofis">Ofis</option>
-                      <option value="bag">Bağ</option>
-                      <option value="torpaq">Torpaq</option>
-                    </select>
-                  </div>
+                    <div class="meqsed_box">
+                      <label for="meqsed">Meqsed</label>
 
-                  <div class="room_box">
-                    <label for="room">Otaq sayi</label>
-                    <select name="room" id="room">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5+</option>
-                    </select>
-                  </div>
+                      <select name="meqsed" id="meqsed">
+                        <option value="">Alis</option>
+                        <option value="">Kiraye</option>
 
-                  <div class="home_price_box">
-                    <label for="home_price">Qiymet(AZN)</label>
-
-                    <div class="price_home">
-                      <input
-                        type="number"
-                        name="minimum"
-                        id="home_price"
-                        placeholder="min"
-                      />
-                      <input
-                        type="number"
-                        name="maxsimum"
-                        id="home_price"
-                        placeholder="max"
-                      />
+                      </select>
                     </div>
-                  </div>
 
-                  <div class="city_box">
+
+                    <div class="type_box">
+                      <label for="type">Tikintinin novu:</label>
+                      <select name="type" id="type">
+                        <option value="menzil">Mənzil</option>
+                        <option value="kohne">Köhnə tikili</option>
+                        <option value="ofis">Ofis</option>
+                        <option value="bag">Bağ</option>
+                        <option value="torpaq">Torpaq</option>
+                      </select>
+                    </div>
+
+
+                    <div class="room_box">
+                      <label for="room">Otaq sayi</label>
+                      <select name="room" id="room">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                      </select>
+                    </div>
+
+                    <div class="price_box">
+                      <label for="home_price">Qiymet(AZN)</label>
+
+                      <div class="price_home">
+                        <input
+                          type="number"
+                          name="minimum"
+                          id="home_price"
+                          placeholder="min"
+                        />
+                        <input
+                          type="number"
+                          name="maxsimum"
+                          id="home_price"
+                          placeholder="max"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="city_box">
                     <label for="city">Şəhər</label>
 
                     <select name="city" id="city">
@@ -102,15 +121,89 @@
                       <option value="quba">Quba</option>
                     </select>
                   </div>
+
+
+
                 </div>
 
-                <div class="unvicible_search">
-                  
+                
+
+                <div class="unvisible_search">
+
+
+                  <div class="cixaris_box">
+                    <label for="cixaris">Çıxarış</label>
+
+                    <select name="cixaris" id="cixaris">
+                      <option value=""></option>
+                      <option value="">Var</option>
+                      <option value="">Yoxdur</option>
+
+                    </select>
+                  </div>
+
+                  <div class="price_box">
+                    <label for="home_price">Sahə(m<sup>2</sup> )</label>
+
+                      <div class="price_home">
+                        <input
+                          type="number"
+                          name="minimum_sahe"
+                          id="home_price"
+                          placeholder="min"
+                        />
+                        <input
+                          type="number"
+                          name="maxsimum_sahe"
+                          id="home_price"
+                          placeholder="max"
+                        />
+                      </div>
+                  </div>
+
+                  <div class="cixaris_box">
+                    <label for="cixaris">Təmir</label>
+
+                    <select name="cixaris" id="cixaris">
+                      <option value=""></option>
+                      <option value="">Var</option>
+                      <option value="">Yoxdur</option>
+
+                    </select>
+                  </div>
+
+                  <div class="cixaris_box">
+                    <label for="cixaris">Əşyalı</label>
+
+                    <select name="cixaris" id="cixaris">
+                      <option value=""></option>
+                      <option value="">Hə</option>
+                      <option value="">Yox</option>
+
+                    </select>
+                  </div>
+
+
+                  <div class="check_box">
+                    <div class="ipotek">
+                      <input type="checkbox" name="ipo" id="ipo">
+                      <label for="ipo">Ipoteka</label>
+                    </div>
+
+
+                  </div>
+
+
                 </div>
-            
-             
+
+                
               </form>
             </div>
+
+
+
+
+
             <div class="addit_btn">
               <div class="additonal_search">Daha çox</div>
 
@@ -120,6 +213,539 @@
         </div>
       </div>
     </header>
+
+
+
+    <section class="sub_category">
+      <div class="sub_cat_cont">
+
+        <div class="sub_cat_item">
+
+          <div class="sub_cat_img">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+
+          <div class="sub_cat_dtl">
+            <div class="sub_cat_title">
+              Lorem Ipsum
+            </div>
+
+            <div class="sub_cat_nmr">
+              1200
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="sub_cat_item">
+
+          <div class="sub_cat_img">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+
+          <div class="sub_cat_dtl">
+            <div class="sub_cat_title">
+              Lorem Ipsum
+            </div>
+
+            <div class="sub_cat_nmr">
+              1200
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="sub_cat_item">
+
+          <div class="sub_cat_img">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+
+          <div class="sub_cat_dtl">
+            <div class="sub_cat_title">
+              Lorem Ipsum
+            </div>
+
+            <div class="sub_cat_nmr">
+              1200
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="sub_cat_item">
+
+          <div class="sub_cat_img">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+
+          <div class="sub_cat_dtl">
+            <div class="sub_cat_title">
+              Lorem Ipsum
+            </div>
+
+            <div class="sub_cat_nmr">
+              1200
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <section class="elan_section">
+      <div class="elan_header">
+        <div class="elan_header_title">
+          VIP elanlar
+        </div>
+
+        <div class="more_elan">
+          <a href="">Daha cox</a>
+        </div>
+
+      </div>
+
+
+      <div class="elan_list">
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+    <section class="elan_section">
+      <div class="elan_header">
+        <div class="elan_header_title">
+          Son elanlar
+        </div>
+
+        <div class="more_elan">
+          <a href="">Daha cox</a>
+        </div>
+
+      </div>
+
+
+      <div class="elan_list">
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="elan_box">
+          <div class="elan_head">
+            <div class="elan_img">
+              <img style="object-fit: cover;" src="../img/40068_ZxP4C8imnIRWDAZMatI9Pg.jpg" alt="" width="100%" height="100%">
+            </div>
+            
+            <div class="kupca">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <div class="vip_elan">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+
+
+            <div class="agentlik">
+              Agentlik
+            </div>
+
+          </div>
+          <div class="elan_bottom">
+
+            <div class="elan_title">
+              N.Nerimanov 2 otaqli
+            </div>
+
+            <div class="elan_price">
+              124000 AZN 
+            </div>
+
+            <div class="add_detail_elan">
+              3 otaqli | 120 m<sup>2</sup> | 20.07.2023
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+
+    <script src="../js/menu.js"></script>
+
+    <script src="../js/index.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
